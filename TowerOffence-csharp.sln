@@ -1,19 +1,29 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2008
 
-
+Project("{F68614F4-26BB-8DF7-BFE5-A51FDDE2B101}") = "TowerOffence", "Assembly-CSharp-vs.csproj", "{EAB0335F-0145-2BCB-00BE-B844DC36B2F1}"
+EndProject
+Project("{F68614F4-26BB-8DF7-BFE5-A51FDDE2B101}") = "TowerOffence", "Assembly-CSharp-Editor-vs.csproj", "{2883F4D2-7E86-3688-6CDF-A3BAF2FEC9F8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-
+		{EAB0335F-0145-2BCB-00BE-B844DC36B2F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAB0335F-0145-2BCB-00BE-B844DC36B2F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAB0335F-0145-2BCB-00BE-B844DC36B2F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAB0335F-0145-2BCB-00BE-B844DC36B2F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2883F4D2-7E86-3688-6CDF-A3BAF2FEC9F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2883F4D2-7E86-3688-6CDF-A3BAF2FEC9F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2883F4D2-7E86-3688-6CDF-A3BAF2FEC9F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2883F4D2-7E86-3688-6CDF-A3BAF2FEC9F8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-			GlobalSection(MonoDevelopProperties) = preSolution
+											GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1

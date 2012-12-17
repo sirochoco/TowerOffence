@@ -44,7 +44,15 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Script\Cannon.js" />
      <Compile Include="Assets\Script\enemy.js" />
+     <Compile Include="Assets\TDTK_Free\FPSDisplay\FrameRate.js" />
+     <Compile Include="Assets\TDTK_Free\Standard Assets\Particles\Legacy Particles\TimedObjectDestructor.js" />
+     <None Include="Assets\TDTK_Free\Standard Assets\Projectors\Guidelines.txt" />
+     <None Include="Assets\TDTK_Free\Standard Assets\Projectors\Sources\Shaders\Projector Multiply.shader" />
+     <None Include="Assets\TDTK_Free\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
+     <None Include="Assets\TDTK_Free\Standard Assets\ShurikenParticle\Shaders\Particle Add.shader" />
+     <None Include="Assets\TDTK_Free\Standard Assets\Projectors\Sources\Shaders\Projector Light.shader" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

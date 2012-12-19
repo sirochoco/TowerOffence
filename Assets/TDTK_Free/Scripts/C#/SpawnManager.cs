@@ -2,6 +2,11 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
+//Continuous:ウェーブがカウントダウン継続中に、新しいウェーブが生成される
+//WaveCleared:現在のウェーブが消えてから、新しいウェーブが生成される
+//RoundBased:ラウンド制。各波が消えてから、新しい波がユーザー操作で生成される
+//SkippableContinuous:タイマーが切れる前に、ユーザーが新しい波を開始することが出来る
+//SkippableWaveCleared:現在の波が切れる前に、ユーザーが新しい波を開始することが出来る
 public enum _SpawnMode{Continuous, WaveCleared, RoundBased, SkippableContinuous, SkippableWaveCleared}
 
 public class SpawnManager : MonoBehaviour {
@@ -20,9 +25,10 @@ public class SpawnManager : MonoBehaviour {
 	
 	public _SpawnMode spawnMode=_SpawnMode.Continuous;
 	
+	//クリープが移動するパスの設定
 	public PathTD defaultPath;
 	private List<Vector3> waypoints;
-	
+	//シーン内のウェーブの数
 	public Wave[] waves=new Wave[1];
 	
 	private bool isClearForSpawning=true;
@@ -297,6 +303,7 @@ public class SpawnManager : MonoBehaviour {
 }
 
 [System.Serializable]
+//サブウェーブのパラメータ
 public class SubWave{
 	public GameObject unit;
 	public int count;
@@ -312,10 +319,11 @@ public class SubWave{
 }
 
 [System.Serializable]
+//サブウェーブを設定できる
 public class Wave{
 	public SubWave[] subWaves=new SubWave[1];
 	public float waveInterval;
-	//public int resource;
+	//public int resource;リソース初期化
 	public int[] resourceGain=new int[1];
 	
 //	[HideInInspector] public List<UnitCreep> activeUnitList=new List<UnitCreep>();

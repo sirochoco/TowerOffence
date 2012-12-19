@@ -18,25 +18,31 @@ public class GameControl : MonoBehaviour {
 	public static event LifeHandler onLifeE;
 
 	static public _GameState gameState=_GameState.Idle;
-	
+	//ゲームスタート時にプレイヤーが持っているライフの合計
 	public int playerLife=10;
+	//ゲームスタート時にプレイヤーが持っているリソースの合計
 	public int playerResource=100;
-	
+	//タワー買い取り比率
 	public float sellTowerRefundRatio=0.5f;
 
 	[HideInInspector] public LayerManager layerManager;
 	public SpawnManager spawnManager;
+	//ウェーブ数合計
 	private int totalWaveCount;
+	//現在のウェーブ
 	private int currentWave=0;
-	
+	//攻撃的タワーの範囲を示すオブジェクト
 	public Transform rangeIndicatorH;
+	//非攻撃的タワーの範囲を示すオブジェクト
 	public Transform rangeIndicatorF;
 	
 	
 	static public GameControl gameControl;
-	
+	//タワー建設プログレスバーの幅
 	public float buildingBarWidthModifier=1f;
+	//タワー建設プログレスバーの高さ
 	public float buildingBarHeightModifier=1f;
+	//タワー建設プログレスバーのオフセット座標
 	public Vector3 buildingBarPosOffset=new Vector3(0, -0.5f, 0);
 	
 

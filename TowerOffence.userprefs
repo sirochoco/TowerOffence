@@ -1,8 +1,8 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/enemy.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/TDTK_Free/Scripts/C#/GameControl.cs">
     <Files>
-      <File FileName="Assets/Script/enemy.js" Line="21" Column="44" />
+      <File FileName="Assets/TDTK_Free/Scripts/C#/GameControl.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
